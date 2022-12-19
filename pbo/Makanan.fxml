@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbo.MakananController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#808080" height="48.0" opacity="0.59" stroke="BLACK" strokeType="INSIDE" width="705.0" />
+      <Button fx:id="btnBarang" layoutX="451.0" layoutY="11.0" mnemonicParsing="false" onAction="#MenuBarang" text="Barang" />
+      <Button fx:id="btnMakanan" layoutX="511.0" layoutY="11.0" mnemonicParsing="false" onAction="#MenuMakanan" text="Makanan" />
+      <Button fx:id="btnKategori" layoutX="583.0" layoutY="11.0" mnemonicParsing="false" onAction="#MenuKategori" text="Kategori" />
+      <Button fx:id="btnData" layoutX="650.0" layoutY="11.0" mnemonicParsing="false" onAction="#MenuData" text="Data" />
+      <Label layoutX="14.0" layoutY="8.0" text="App">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHome" layoutX="394.0" layoutY="11.0" mnemonicParsing="false" onAction="#MenuAwal" text="Home" />
+      <TableView fx:id="viewTable" layoutY="48.0" prefHeight="391.0" prefWidth="398.0">
+        <columns>
+            <TableColumn fx:id="kolomid" prefWidth="48.79998701810837" text="Id" />
+          <TableColumn fx:id="kolomnama" prefWidth="88.00000381469727" text="Nama" />
+          <TableColumn fx:id="kolomharga" prefWidth="62.39996337890625" text="Harga" />
+            <TableColumn fx:id="kolomjumlah" prefWidth="58.39994812011719" text="Jumlah" />
+            <TableColumn fx:id="kolomdiskon" prefWidth="65.60003662109375" text="Diskon" />
+            <TableColumn fx:id="kolomdayatahan" prefWidth="75.0" text="Daya Tahan" />
+        </columns>
+      </TableView>
+      <Label layoutX="411.0" layoutY="81.0" text="Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldid" layoutX="509.0" layoutY="79.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="411.0" layoutY="127.0" text="Nama">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="175.0" text="Harga">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="220.0" text="Jumlah">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="268.0" text="Diskon">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="314.0" text="Daya Tahan">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldnama" layoutX="509.0" layoutY="124.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="fieldharga" layoutX="509.0" layoutY="172.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="fieldjumlah" layoutX="509.0" layoutY="217.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="fielddiskon" layoutX="509.0" layoutY="265.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="fielddaya" layoutX="509.0" layoutY="311.0" prefHeight="26.0" prefWidth="186.0" />
+      <Button fx:id="btnadd" layoutX="651.0" layoutY="351.0" mnemonicParsing="false" onAction="#inputdata" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button fx:id="btndelete" layoutX="651.0" layoutY="385.0" mnemonicParsing="false" onAction="#deletedata" text="Delete" />
+   </children>
+</AnchorPane>
